@@ -1,0 +1,27 @@
+# Given integer N
+N = 12
+
+# Initialize s and t
+s = N / 2
+t = s
+
+# Traverse from 0 till N
+for i in range(0, N):
+
+if (i > s):
+	for j in range(0, int(s)):
+		print(" ", end = "")
+else:
+	for j in range(0, i):
+		print(" ", end = "")
+
+	print("*", end = "")
+	
+	for k in range(0, (2*int(t))):
+		print(" ", end = "")
+
+	# Decrement t
+	t = t - 1
+
+print(" *")
+
